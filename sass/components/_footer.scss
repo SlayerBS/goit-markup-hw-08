@@ -1,0 +1,54 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0 60px 0;
+
+  &__address {
+    color: $background-color;
+    font-style: normal;
+    line-height: 24px;
+    list-style-type: none;
+  }
+
+  &__contacts {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    margin-top: 9px;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  
+  &__title {
+    color: $background-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
+.logo__end--footer {
+  color: $background-color;
+}
+.logo--footer {
+  margin-bottom: 20px;
+}
+
+.social__link--footer {
+  color: $background-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  @include transit;
+  @include transit(background-color);
+
+  &:hover,
+  &:focus {
+    color: $background-color;
+    background-color: $accent-color;
+  }
+}

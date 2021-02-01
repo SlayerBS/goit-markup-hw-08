@@ -1,0 +1,67 @@
+.crew {
+    background-color: $secondary-background-color;
+    padding: 94px 0 94px 0;
+    text-align: center;
+ 
+    &__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+} 
+  .person {
+    background-color: $background-color;
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    &__title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.117;
+    text-align: center;
+    margin: 30px auto 10px;
+  }
+  
+    &__prof {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+} 
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    height: 44px;
+    margin: 0 auto;
+    
+    &__svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+  
+    &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $secondary-accent-color;
+    border-radius: 50%;
+    @include transit;
+    @include transit(background-color);
+  }
+  
+    &__link:hover,
+    &__link:focus {
+    color: $background-color;
+    background-color: $accent-color;
+  }
+}

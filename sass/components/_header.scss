@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container--header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  font-family: $secondary-font-family;
+  color: $accent-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  
+  &__end {
+  color: #000000;
+  }
+}

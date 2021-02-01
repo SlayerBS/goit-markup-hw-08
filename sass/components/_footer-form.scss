@@ -1,0 +1,43 @@
+
+.footer-form {
+    margin-top: 12px;
+    margin-left: 93px;
+  
+    &__block {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__email {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: #2f303a;
+      font-size: 16px;
+      line-height: 1, 25;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 15px 16px;
+      width: 358px;
+      margin-right: 12px;
+    }
+  
+    &__button {
+      @extend %flex-centered;
+      background-color: $accent-color;
+      color: $background-color;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.06em;
+      padding: 10px 28px 10px 29px;
+      border-width: 0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    &__send {
+      margin-left: 10px;
+    }
+  }
+  
