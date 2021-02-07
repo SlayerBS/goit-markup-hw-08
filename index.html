@@ -12,27 +12,39 @@
     <header class="header">
         <div class="container container--header">
             <a href="./index.html" class="logo">Web<span class="logo__end">Studio</span></a>
-            <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a href="index.html" class="menu__link menu__link--active">Студия</a></li>
-                    <li class="menu__item"><a href="portfolio.html" class="menu__link ">Портфолио</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <address class="contacts">
-                <a href="mailto:info@devstudio.com" class="contacts__item">
-                    <svg class="contacts__icon" width="16px" height="12px">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    <span>info@devstudio.com</span>
-                </a>
-                <a href="tel:+380961111111" class="contacts__item">
-                    <svg class="contacts__icon" width="10px" height="16px">
-                        <use href="./images/sprite.svg#icon-tel"></use>
-                    </svg>
-                    <span>+38 096 111 11 11</span>
-                </a>
-            </address>
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__container"
+                data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+
+                    <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+
+                </svg>
+            </button>
+            <div class="menu__container" id="menu__container" data-menu>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link menu__link--active">Студия</a>
+                        </li>
+                        <li class="menu__item"><a href="portfolio.html" class="menu__link ">Портфолио</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="contacts">
+                    <a href="mailto:info@devstudio.com" class="contacts__item">
+                        <svg class="contacts__icon" width="16px" height="12px">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                    <a href="tel:+380961111111" class="contacts__item">
+                        <svg class="contacts__icon" width="10px" height="16px">
+                            <use href="./images/sprite.svg#icon-tel"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </address>
+            </div>
         </div>
     </header>
     <main>
@@ -96,8 +108,8 @@
         <section class="feature">
             <div class="container">
                 <h2 class="visually-hidden"> Наши преимущества</h2>
-                <ul class="card-set">
-                    <li class="advantage">
+                <ul class="advantage">
+                    <li class="advantage__item">
                         <div class="advantage__img">
                             <svg class="advantage__icon">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
@@ -108,7 +120,7 @@
                             формированию
                             позиции.</p>
                     </li>
-                    <li class="advantage">
+                    <li class="advantage__item">
                         <div class="advantage__img">
                             <svg class="advantage__icon">
                                 <use href="./images/sprite.svg#icon-clock"></use>
@@ -118,7 +130,7 @@
                         <p class="advantage__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой.</p>
                     </li>
-                    <li class="advantage">
+                    <li class="advantage__item">
                         <div class="advantage__img">
                             <svg class="advantage__icon">
                                 <use href="./images/sprite.svg#icon-diagram"></use>
@@ -128,7 +140,7 @@
                         <p class="advantage__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="advantage">
+                    <li class="advantage__item">
                         <div class="advantage__img">
                             <svg class="advantage__icon">
                                 <use href="./images/sprite.svg#icon-astronaut"></use>
@@ -144,7 +156,7 @@
         <section class="about">
             <div class="container">
                 <h2 class="container__title">Чем мы занимаемся</h2>
-                <ul class="card-set">
+                <ul class="about__list">
                     <li class="about__item">
                         <img class="about__img" src="./images/img1.jpg" alt="Руки на клавиатуре перед экраном"
                             width="370">
@@ -167,12 +179,13 @@
                 </ul>
             </div>
         </section>
-        <section class="crew">
+        <section class="team">
             <div class="container">
                 <h2 class="container__title">Наша команда</h2>
-                <ul class="card-set">
+                <ul class="team__list">
                     <li class="person">
-                        <img src="./images/img4.jpg" alt="Фото мужчины в очках с бородой" width="270">
+                        <img class="person__foto" src="./images/img4.jpg" alt="Фото мужчины в очках с бородой"
+                            width="270">
                         <h4 class="person__title">Игорь Демьяненко</h4>
                         <p class="person__prof">Product Designer</p>
                         <ul class="social">
@@ -209,7 +222,7 @@
                         </ul>
                     </li>
                     <li class="person">
-                        <img src="./images/img5.jpg" alt="Фото девушки блондинки" width="270">
+                        <img class="person__foto" src="./images/img5_450.jpg" alt="Фото девушки блондинки" width="100%">
                         <h4 class="person__title">Ольга Репина</h4>
                         <p class="person__prof">Frontend Developer</p>
                         <ul class="social">
@@ -246,7 +259,8 @@
                         </ul>
                     </li>
                     <li class="person">
-                        <img src="./images/img6.jpg" alt="Фото парня в светлой рубашке" width="270">
+                        <img class="person__foto" src="./images/img6.jpg" alt="Фото парня в светлой рубашке"
+                            width="270">
                         <h4 class="person__title">Николай Тарасов</h4>
                         <p class="person__prof">Marketing</p>
                         <ul class="social">
@@ -283,7 +297,8 @@
                         </ul>
                     </li>
                     <li class="person">
-                        <img src="./images/img7.jpg" alt="Фото парня в очках и черной футболке" width="270">
+                        <img class="person__foto" src="./images/img7.jpg" alt="Фото парня в очках и черной футболке"
+                            width="270">
                         <h4 class="person__title">Михаил Ермаков</h4>
                         <p class="person__prof">UI Designer</p>
                         <ul class="social">
@@ -325,72 +340,69 @@
         <section class="clients">
             <div class="container">
                 <h2 class="container__title">Постоянные клиенты</h2>
-                <div class="clients__logo">
-                    <ul class="card-set">
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="45px" height="50px">
-                                    <use href="./images/sprite.svg#icon-logo1">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="40px" height="52px">
-                                    <use href="./images/sprite.svg#icon-logo2">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="41px" height="43px">
-                                    <use href="./images/sprite.svg#icon-logo3">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="80px" height="42px">
-                                    <use href="./images/sprite.svg#icon-logo4">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="59px" height="47px">
-                                    <use href="./images/sprite.svg#icon-logo5">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="clients__item">
-                                <svg class="clients__icon" width="88px" height="45px">
-                                    <use href="./images/sprite.svg#icon-logo6">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="clients__set">
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="45px" height="50px">
+                                <use href="./images/sprite.svg#icon-logo1">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="40px" height="52px">
+                                <use href="./images/sprite.svg#icon-logo2">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="41px" height="43px">
+                                <use href="./images/sprite.svg#icon-logo3">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="80px" height="42px">
+                                <use href="./images/sprite.svg#icon-logo4">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="59px" height="47px">
+                                <use href="./images/sprite.svg#icon-logo5">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients__card">
+                        <a href="" class="clients__item">
+                            <svg class="clients__icon" width="88px" height="45px">
+                                <use href="./images/sprite.svg#icon-logo6">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__main">
-                <div class="footer__contacts">
+               <div class="footer__contacts">
                     <a href="index.html" class="logo logo--footer">Web<span
                             class="logo__end logo__end--footer">Studio</span></a>
                     <address>
-                        <ul>
+                        <ul class="footer__list">
                             <li class="footer__address">г. Киев, пр-т Леси Украинки, 26&nbsp;&nbsp;&nbsp;</li>
-                            <li><a href="mailto:info@devstudio.com" class="footer__contacts">info@devstudio.com</a></li>
-                            <li><a href="tel:+380961111111" class="footer__contacts">+38 096 111 11 11</a></li>
+                            <li class="footer__contact"><a href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+                            <li class="footer__contact"><a href="tel:+380961111111" >+38 096 111 11 11</a></li>
                         </ul>
                     </address>
 
@@ -436,15 +448,15 @@
                         <label>
                             <input class="footer-form__email" type="email" name="mail" placeholder="E-mail">
                         </label>
-                        <button class="footer-form__button" type="submit">Подписаться<svg class="footer-form__send" width="24"
-                                height="24">
+                        <button class="footer-form__button" type="submit">Подписаться<svg class="footer-form__send"
+                                width="24" height="24">
                                 <use href="./images/sprite.svg#icon-send"></use>
                             </svg></button>
                     </form>
                 </div>
-            </div>
-        </div>
+           </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

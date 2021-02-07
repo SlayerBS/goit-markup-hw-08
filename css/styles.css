@@ -272,14 +272,14 @@ margin-left: 50px;
   width: 100%;
 }
 
-/*crew*/
-.crew {
+/*team*/
+.team {
   background-color: var(--secondary-background-color);
   padding: 94px 0 94px 0;
   text-align: center;
 }
 
-.crew__title {
+.team__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;

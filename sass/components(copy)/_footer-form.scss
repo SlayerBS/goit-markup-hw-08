@@ -1,24 +1,16 @@
 
 .footer-form {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-        
-  }
-         
+    margin-top: 12px;
+    margin-left: 93px;
+  
     &__block {
-      @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-      
-      }
-           
+      display: flex;
+      align-items: center;
     }
   
     &__email {
       border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
       background-color: #2f303a;
@@ -26,21 +18,14 @@
       line-height: 1, 25;
       color: rgba(255, 255, 255, 0.6);
       padding: 15px 16px;
-      width: 100%;
-      margin-bottom: 20px;
-      @media screen and (min-width: 768px) {
-        width: 450px;
-      }
-      @media screen and (min-width: 1200px){
-        width: 358px;
-      }
+      width: 358px;
+      margin-right: 12px;
     }
   
     &__button {
       @extend %flex-centered;
       background-color: $accent-color;
       color: $background-color;
-      height: 50px;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.875;
@@ -49,14 +34,10 @@
       border-width: 0;
       border-radius: 4px;
       cursor: pointer;
-      margin: 0 auto;
-      @media screen and (min-width: 1200px){
-        margin-left: 12px;
-      }
     }
   
     &__send {
-      /*margin-left: 10px;*/
+      margin-left: 10px;
     }
   }
   

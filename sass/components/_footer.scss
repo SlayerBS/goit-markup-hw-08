@@ -1,6 +1,34 @@
 .footer {
   background-color: #2f303a;
-  padding: 60px 0 60px 0;
+    
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     @media screen and (min-width: 768px) {
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-items: baseline;
+     @media screen and (min-width: 1200px) {
+       flex-wrap: nowrap;
+       justify-content: space-between;
+     }
+
+
+  }
+}
+&__contacts {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 
   &__address {
     color: $background-color;
@@ -9,20 +37,24 @@
     list-style-type: none;
   }
 
-  &__contacts {
+  &__list > li:not(:last-child){
+    margin-bottom: 8px;
+  }
+
+  &__contact {
     display: block;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
-    margin-top: 9px;
   }
 
-  &__main {
-    display: flex;
-    justify-content: space-between;
-  }
   &__social {
-    margin-top: 12px;
-    margin-left: 70px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 50%;
+    }
+    
   }
   
   &__title {
@@ -30,13 +62,18 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 }
 
 .logo__end--footer {
   color: $background-color;
 }
+
 .logo--footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -52,3 +89,4 @@
     background-color: $accent-color;
   }
 }
+

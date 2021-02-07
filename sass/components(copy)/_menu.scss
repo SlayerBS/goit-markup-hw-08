@@ -1,17 +1,5 @@
-  .menu__container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    &.is-open{
-      display: block;
-    }
-}
 
 .menu {
-  @media screen and (min-width: 768px){
     display: flex;
     margin: 0 0 0 93px;
   
@@ -20,34 +8,9 @@
     }
   }
   
-}  
-  .menu__button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-
-    & .icon-cross {
-      display: none;
-    }
-
-    &.is-open {
-      .icon-cross{
-      display: block;
-    }
-
-    .icon-menu{
-      display: none;
-    }
-  }
-  }
- 
-
-
   .menu__link {
     display: block;
-    
+    position: relative;
     color: $title-text-color;
     font-weight: 500;
     letter-spacing: 0.02em;

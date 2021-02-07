@@ -8,8 +8,6 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     @include transit(opacity);
-    overflow-y: scroll;
-    padding: 93px 15px;
     
   }
 

@@ -5,19 +5,28 @@
 @import "./utils/placeholders";
 @import "./base/defaults";
 @import "./layout/container";
-@import "./components/backdrop";
+@import "./components/hero";
 @import "./components/header";
 @import "./components/menu";
-@import "./components/hero";
+@import "./components/modal";
 @import "./components/feature";
 @import "./components/about";
-@import "./components/crew";
+@import "./components/team";
 @import "./components/clients";
+@import "./components/backdrop";
 @import "./components/footer";
 @import "./components/footer-form";
+@import "./components/buttons";
+@import "./components/portfolio";
+
+/*@import "./components/backdrop";
+
+
+@import "./components/about";
+
 @import "./components/portfolio";
 @import "./components/buttons";
-@import "./components/modal";
+*/
 
 
 
