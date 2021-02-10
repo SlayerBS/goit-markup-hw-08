@@ -192,7 +192,7 @@
     
     &:checked + .confirm__icon {
     background-color: $accent-color;
-    background-image: url('/images/icon-check.svg');
+    background-image: url('./images/icon-check.svg;');
     background-size: contain;
     border: 2px solid $accent-color;
     background-origin: border-box;
