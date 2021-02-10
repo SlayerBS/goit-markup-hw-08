@@ -1,0 +1,58 @@
+.clients {
+  text-align: center;
+  margin-bottom: -30px;
+
+  &__set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -28px;
+  }
+
+  &__item {
+    @extend %flex-centered;
+    height: 90px;
+    color: $secondary-accent-color;
+    border: 1px solid $secondary-accent-color;
+    border-radius: 4px;
+    @include transit;
+    @include transit(border-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients__card {
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  margin-bottom: 30px;
+}

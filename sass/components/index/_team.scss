@@ -1,0 +1,87 @@
+.team {
+  background-color: $secondary-background-color;
+  text-align: center;
+  .container {
+    margin-bottom: -30px;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.person {
+  background-color: $background-color;
+  padding-bottom: 24px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__foto {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.117;
+    margin-bottom: 10px;
+  }
+
+  &__prof {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $secondary-accent-color;
+    border-radius: 50%;
+    @include transit;
+    @include transit(background-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $background-color;
+    background-color: $accent-color;
+  }
+}
