@@ -392,9 +392,8 @@ img {
 }
 
 .container {
-  padding: 60px 15px;
-  /*padding-left: 15px;
-    padding-right: 15px;*/
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -413,7 +412,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 94px 15px;
   }
 }
 
@@ -424,6 +422,13 @@ img {
   font-size: 28px;
   line-height: 1.17;
   margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .header {
@@ -939,6 +944,7 @@ img {
 }
 
 .hero {
+  padding: 118px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimized-jpg/hero__mob.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimized-jpg/hero__mob.jpg);
   background-repeat: no-repeat;
@@ -947,14 +953,8 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .hero .container {
-    padding: 118px 0;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .hero .container {
+  .hero {
     padding: 200px 0;
   }
 }
@@ -998,12 +998,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimage/optimized-jpg/hero__desktop@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimage/optimized-jpg/hero__desktop@2x.jpg);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero {
-    padding: 58px 0;
   }
 }
 
@@ -1298,6 +1292,20 @@ img {
   border-color: #2196f3;
 }
 
+.feature {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding: 94px 0;
+  }
+}
+
+.advantage {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .advantage {
     display: -webkit-box;
@@ -1311,6 +1319,7 @@ img {
 .advantage__item {
   display: block;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 767px) {
@@ -1345,14 +1354,20 @@ img {
 }
 
 .advantage__title {
-  text-align: center;
   color: #212121;
   font-style: normal;
   font-weight: bold;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   list-style-type: none;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 
 .advantage__text {
@@ -1407,6 +1422,13 @@ img {
 .team {
   background-color: #f5f4fa;
   text-align: center;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team .container {
@@ -1516,6 +1538,13 @@ img {
 .clients {
   text-align: center;
   margin-bottom: -30px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__set {
@@ -1524,7 +1553,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: -28px;
 }
 
 .clients__item {
@@ -1605,6 +1633,7 @@ img {
 
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer .container {

@@ -1,15 +1,9 @@
 .hero {
-  @media screen and (min-width: 768px) {
-    .container {
-      padding: 118px 0;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .container {
+     padding: 118px 0;
+    @media screen and (min-width: 1200px) {
       padding: 200px 0;
     }
-  }
+  
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -68,14 +62,13 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
-    padding: 58px 0;
-  }
+  
   text-align: center;
 
   &__title {
     display: block;
     margin: 0 auto 30px;
+
     color: $background-color;
     font-weight: 900;
     font-size: 26px;
